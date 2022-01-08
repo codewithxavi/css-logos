@@ -1,0 +1,110 @@
+:root {
+  --color1: #f4b114;
+  --color2: #000305;
+  --color3: #efae13;
+  --color4: #ffea65;
+  --color5: #fffdfe;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  height: 100vh;
+}
+
+.main {
+  display: grid;
+  border-radius: 10px;
+  background-color: #7bddbc;
+  min-width: 400px;
+  min-height: 400px;
+  place-content: center;
+}
+
+.brawlstars {
+  position: relative;
+  outline: 20px solid var(--color2);
+  border-radius: 50%;
+  background-color: var(--color1);
+  width: 200px;
+  height: 200px;
+}
+
+.bump {
+  position: absolute;
+  transform: rotate(53deg) translateX(28px) translateY(-25px);
+  border-radius: 50%;
+  background-color: var(--color5);
+  width: 40px;
+  height: 60px;
+}
+
+.eyebrow {
+  position: absolute;
+  top: 30%;
+  left: 46%;
+  transform: rotate(-45deg) translate(-50%, -50%);
+  border-radius: 10px;
+  background-color: var(--color2);
+  width: 15px;
+  height: 35px;
+}
+
+.eyebrow::after {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  transform: rotate(90deg) translate(13px, -11px);
+  border-radius: 10px;
+  background-color: var(--color2);
+  width: 15px;
+  height: 35px;
+  content: "";
+}
+
+.eye {
+  position: absolute;
+  top: 55%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: var(--color2);
+  width: 55px;
+  height: 55px;
+  -webkit-box-reflect: right 25px;
+}
+
+.nose {
+  position: absolute;
+  top: 70%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  border-right: 12.5px solid transparent;
+  border-bottom: 25px solid #000;
+  border-left: 12.5px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.chin {
+  position: absolute;
+  bottom: -34px;
+  left: 46%;
+  transform: rotate(90deg);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: var(--color1);
+  width: 15px;
+  height: 80px;
+}
+
+
+
